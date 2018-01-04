@@ -1,0 +1,38 @@
+@import "normalize";
+@import "variables";
+@import "bootstrap-grid4";
+
+*::-webkit-input-placeholder{
+  color: #666;
+  opacity: 1;
+}
+
+
+*:-moz-placeholder{
+  color: #666;
+  opacity: 1;
+}
+
+
+*::-moz-placeholder{
+  color: #666;
+  opacity: 1;
+}
+
+
+*:-ms-input-placeholder{
+  color: #666;
+  opacity: 1;
+}
+.hidden{
+  display: none;
+}
+
+
+//import elements
+
+@import "elements/header";
+
+
+
+
