@@ -1,6 +1,7 @@
 @import "normalize";
 @import "variables";
 @import "bootstrap-grid4";
+@import "libs";
 
 *::-webkit-input-placeholder{
   color: #666;
@@ -83,6 +84,7 @@ body{
 //import elements
 
 @import "elements/header";
+@import "elements/sliders";
 
 
 

@@ -1,0 +1,12 @@
+@import "../variables";
+
+.wrap-slider{
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.main-slider_item{
+  position: relative;
+  img{
+    width: 100%;
+  }
+}

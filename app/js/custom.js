@@ -26,4 +26,16 @@ $(function() {
 
 });
 
+// dropdown menu open
+$(".main-menu_catalog").click(function (e) {
+    e.preventDefault();
+    $(".dropdown-wrap").slideToggle();
+});
+
+// mob menu open
+$(".bars-mob").click(function (e) {
+    e.preventDefault();
+    $(".nav-wrap").slideToggle();
+});
+
 
