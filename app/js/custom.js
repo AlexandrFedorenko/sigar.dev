@@ -41,8 +41,17 @@ $(".bars-mob").click(function (e) {
 // sidebar dropdown
 $(".sidebar-menu_item--dropdown").click(function (e) {
     e.preventDefault();
-    $(".sidebar-menu-dropdown").slideToggle();
+    $(this).find(".sidebar-menu-dropdown").slideToggle();
 });
+
+// sidebar mob
+$(".bars-sidebar-js").click(function (e) {
+    e.preventDefault();
+    if (screen.width <= '992'){
+        $(".wrap-ul-sidebar").slideToggle();
+    }
+});
+
 
 
 

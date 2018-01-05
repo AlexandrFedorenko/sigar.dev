@@ -13,9 +13,9 @@
   background: #f3f3f3;
   border-radius: 12px;
   padding: 20px;
+  margin-bottom: 45px;
 }
 .filter-main{
-  margin-bottom: 45px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,7 +42,7 @@
   height: 4px;
   background: #d2d2d2;
   border: none;
-  margin: 0 15px 0 30px  ;
+  margin: 0 15px 0 20px  ;
 }
 .ui-slider-horizontal .ui-slider-range{
   background: #ff000f;
@@ -60,4 +60,215 @@
 .filter-main-left{
   display: flex;
   align-items: center;
+}
+
+//items
+.row-strech{
+  align-items: stretch;
+}
+.wrap-items{
+  padding: 30px 25px;
+  margin-bottom: 40px;
+  border: 1px solid transparent;
+  transition: .3s;
+  &:hover{
+    border: 1px solid #d2d2d2;
+    border-radius: 6px;
+  }
+}
+.img-item_img{
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto;
+}
+.title-item{
+  color: #1f1f1f;
+  font-family: $gotReg;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 15px;
+  margin-bottom: 35px;
+}
+.wrap-item-price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap-item-price_left{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.item-price_top{
+  color: #757575;
+  font-size: 12px;
+  padding-bottom: 4px;
+}
+.item-price_bot{
+  color: #1f1f1f;
+  font-family: $gotBold;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.item-price_btn{
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  background: #ff000f;
+  padding: 14px 16px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: .3s;
+  &:hover{
+    border: 1px solid #ff000f;
+    color: #1f1f1f;
+    background: white;
+  }
+}
+
+//sales
+.img-item{
+  position: relative;
+}
+.wrap-sales{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+.sales{
+  width: 43px;
+  height: 43px;
+  border-radius: 100%;
+  border: 3px solid #ff000f;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3px;
+}
+.sales_text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff000f;
+  font-family: $gotBold;
+  font-size: 12px;
+  font-weight: 700;
+  width: 31px;
+  height: 31px;
+  border: 1px dotted #ff000f;
+  border-radius: 100%;
+  padding-bottom: 4px;
+}
+.sales--new{
+  background: #ff000f;
+}
+.sales_text--new{
+  color: white;
+  border: 1px dotted white;
+}
+.sales_text-black{
+  text-align: center;
+  color: #ffffff;
+  font-family: $gotBold;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 8px;
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+  border: 3px solid #1f1f1f;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 4px;
+}
+.wrap-ul-sidebar{
+  z-index: 1;
+}
+//media
+
+@media  (max-width: 1200px){
+  .sidebar_title{
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+}
+@media  (max-width: 992px){
+  .wrap-ul-sidebar{
+    display: none;
+    z-index: 2;
+  }
+  .sidebar_title{
+    text-align: left;
+    padding-top: 15px;
+  }
+  .sidebar--bg{
+    margin-bottom: 30px;
+  }
+}
+@media  (max-width: 768px){
+  .sidebar--bg{
+    background: white;
+  }
+  .bars-sidebar{
+   z-index: 99999;
+    left: auto;
+    right: 0;
+    width: 20px;
+    height: 15px;
+    margin-left: 0;
+    span{
+      background: black;
+      height: 3px;
+    }
+  }
+  .sidebar_title{
+    padding-left: 0;
+  }
+  .title_h1{
+    text-align: center;
+  }
+  .filter-main{
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  .filter-main-left{
+    margin-bottom: 20px;
+    justify-content: flex-end;
+  }
+}
+@media  (max-width: 480px){
+  .filter-main{
+    align-items: center;
+  }
+  .filter-main-left{
+    flex-direction: column;
+    align-items: center;
+  }
+  .filter-main-left_price{
+    margin-bottom: 6px;
+    margin-top: 6px;
+  }
+  .ui-widget.ui-widget-content{
+    margin-top: 30px;
+  }
+  .arr-drop{
+    margin-left: 10px;
+  }
+  .drop-arr-flex{
+    align-items: center;
+    justify-content: center;
+  }
+  .sidebar-menu-dropdown_item{
+    padding-left: 0;
+  }
 }
