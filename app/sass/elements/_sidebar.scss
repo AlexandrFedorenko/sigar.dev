@@ -1,0 +1,68 @@
+@import "../variables";
+
+.sidebar{
+  width: 100%;
+  position: relative;
+  padding: 0 35px 0 35px;
+}
+.sidebar--bg{
+  background: #f3f3f3 url("../img/bg-top-sidebar.jpg")no-repeat top left;
+}
+.bars-sidebar{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+.sidebar_title{
+  color: #1f1f1f;
+  font-family: $gotBold;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 12px;
+  padding-left: 25px;
+}
+.sidebar-menu{
+  margin-top: 45px;
+  li{
+    &:first-child{
+      margin-bottom: 20px;
+    }
+  }
+}
+.sidebar-menu_item{
+  margin-bottom: 20px;
+  a{
+    &:hover{
+      color: #ff000f;
+    }
+  }
+}
+.drop-arr-flex{
+  display: flex;
+  align-items: center;
+}
+.arr-drop{
+  background: url("../img/arr.png")no-repeat  center;
+  width: 10px;
+  height: 12px;
+  display: block;
+  margin-left: 40px;
+}
+.sidebar-menu-dropdown{
+  display: none;
+  margin-top: 10px;
+  li:first-child{
+    margin-bottom: 10px;
+  }
+}
+.sidebar-menu-dropdown_item{
+  padding-left: 20px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.sidebar-menu--mar-bot{
+  padding-bottom: 15px;
+}

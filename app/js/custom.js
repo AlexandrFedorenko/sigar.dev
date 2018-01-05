@@ -38,4 +38,11 @@ $(".bars-mob").click(function (e) {
     $(".nav-wrap").slideToggle();
 });
 
+// sidebar dropdown
+$(".sidebar-menu_item--dropdown").click(function (e) {
+    e.preventDefault();
+    $(".sidebar-menu-dropdown").slideToggle();
+});
+
+
 
