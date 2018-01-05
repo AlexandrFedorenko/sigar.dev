@@ -263,7 +263,29 @@
                         </div>
                     </aside>
                 </div>
-                <div class="col-xl-9"></div>
+                <div class="col-xl-9">
+                    <div class="title">
+                        <h1 class="title_h1">товары</h1>
+                    </div>
+                    <div class="filter filter--bg">
+                        <div class="filter-main">
+                            <div class="filter-main-left">
+                                <span class="filter-main-left_price">Цена:</span>
+                                <input type="text" class="filter-main-left_price-inp" id="minCost" value="50">
+                                <span class="filter-main-left_price filter-main-left_price--def">-</span>
+                                <input type="text" class="filter-main-left_price-inp" id="maxCost" value="1000">
+                                <div class="filter-main-left_slid" id="slider"></div>
+                            </div>
+                            <!--<div class="filter-main-right">-->
+                                <!--<span class="filter-main-left_price">Цена:</span>-->
+                                <!--<input type="text" class="filter-main-left_price-inp" >-->
+                                <!--<span class="filter-main-left_price">-</span>-->
+                                <!--<input type="text" class="filter-main-left_price-inp"  >-->
+                                <!--<div class="filter-main-left_slid"></div>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -278,8 +300,25 @@
 
 
 <script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/jquery-ui/jquery-ui.js"></script>
 <script src="libs/slick/slick.js"></script>
 <script src="js/custom.js"></script>
+<script>
+    $("#slider").slider({
+        min: 0,
+        max: 1000,
+        values: [50,500],
+        range: true,
+        stop: function(event, ui) {
+            $("input#minCost").val($("#slider").slider("values",0));
+            $("input#maxCost").val($("#slider").slider("values",1));
+        },
+        slide: function(event, ui){
+            $("input#minCost").val($("#slider").slider("values",0));
+            $("input#maxCost").val($("#slider").slider("values",1));
+        }
+    });
+</script>
 <script>
     $('.main-slider').slick({
         infinite: true,
@@ -288,6 +327,7 @@
         dots: true
     });
 </script>
+
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
