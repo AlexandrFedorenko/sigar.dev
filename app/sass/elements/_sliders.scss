@@ -152,7 +152,9 @@
     margin-right: 30px;
   }
 }
-
+.title--slider{
+  margin-top: 50px;
+}
 
 //media
 
@@ -183,10 +185,13 @@
   .wrap-title-slider{
     max-width: 768px;
   }
-
+  .title--slider{
+    margin-top: 20px;
+  }
 }
 @media  (max-width: 768px){
 .wrap-slider{
   display: none;
 }
+
 }

@@ -1,0 +1,141 @@
+@import "../variables";
+
+.mfp-content {
+  max-width: 750px;
+  margin: 0 auto;
+}
+.callbacPopup{
+  z-index: 9999999;
+  background: url("../img/bg-popup.jpg")no-repeat center;
+  background-size: cover;
+  padding: 60px 0;
+}
+.popup-title{
+  color: #1f1f1f;
+  font-family: $gotReg;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+  }
+.inpPopup{
+  width: 165px;
+  height: 46px;
+  border: 1px solid #d2d2d2;
+  background-color: #ffffff;
+  padding-left: 15px;
+}
+.mfp-wrap{
+  z-index: 999999999999;
+}
+.wrap-popup-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inpPopup--mar{
+  margin-right: 10px;
+}
+.inp-foot-sub--size{
+  width: 340px;
+}
+.wrap-inp-top{
+  margin-bottom: 20px;
+}
+
+//popup 2
+.popup-title-h{
+  color: #1f1f1f;
+  font-family: $gotReg;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 72px;
+  padding-bottom: 20px;
+}
+.popup-title2{
+  @extend .popup-title-h;
+  font-size: 36px;
+}
+.popup-text{
+  color: #000000;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto 30px;
+}
+.bt-pop{
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  width: 165px;
+  height: 46px;
+  background-color: #ff000f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: .3s;
+}
+.wrap-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bt-pop--red{
+  margin-right: 8px;
+  background: #ff000f;
+  &:hover{
+    border: 1px solid #ff000f;
+    color: black;
+    background: white;
+  }
+}
+
+.bt-pop--black{
+  background:  #1f1f1f;
+  &:hover{
+    border: 1px solid  #1f1f1f;
+    color: black;
+    background: white;
+  }
+}
+#form-popup2 .mfp-close {
+  display: none!important;
+}
+
+//media
+
+@media  (max-width: 420px){
+  .popup-title{
+    font-size: 22px;
+  }
+  .wrap-inp-top{
+    text-align: center;
+  }
+  .inpPopup--mar{
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .inp-foot-sub--size{
+    width: auto;
+  }
+
+  .popup-title-h{
+    font-size: 40px;
+  }
+  .popup-title2 {
+    font-size: 22px;
+  }
+  .wrap-buttons{
+    flex-direction: column;
+  }
+  .bt-pop--red{
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

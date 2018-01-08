@@ -3,27 +3,32 @@
 @import "bootstrap-grid4";
 @import "libs";
 
+//placeholder
 *::-webkit-input-placeholder{
-  color: #666;
-  opacity: 1;
+  color: #757575;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 
 *:-moz-placeholder{
-  color: #666;
-  opacity: 1;
+  color: #757575;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 
 *::-moz-placeholder{
-  color: #666;
-  opacity: 1;
+  color: #757575;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 
 *:-ms-input-placeholder{
-  color: #666;
-  opacity: 1;
+  color: #757575;
+  font-size: 12px;
+  font-weight: 400;
 }
 .hidden{
   display: none;
@@ -81,14 +86,28 @@ body{
   font-family: $open;
   font-weight: 400;
 }
-//import elements
+
+select {
+  outline: none;
+  color: #757575;
+  font-size: 12px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../img/arr-select.png")no-repeat 90% center;
+}
+//import elements & pages
 
 @import "elements/header";
 @import "elements/sliders";
 @import "elements/sidebar";
-
-
 @import "pages/_index";
+@import "elements/footer";
+@import "elements/popup";
+@import "pages/news";
+@import "pages/action&contact";
+@import "pages/cart&item";
 
 
 
